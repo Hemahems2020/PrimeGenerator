@@ -1,0 +1,23 @@
+Steps to run the code
+
+1. Make sure you have a folder C:/Users/SquareH or change to the appropriate folder location in application.properties under src/main/resources.
+
+2. Start the Application
+to start from eclipse - Go to src/main/java com.rest.webservices.restfulwebservices/RestfulWbServicesApplication.java->right click->Run As->Java Application.
+to start from jar - download the jar file demo-0.0.1-SNAPSHOT.jar and in command prompt run the jar file as java -jar demo-0.0.1-SNAPSHOT.jar
+
+3. To access H2 database
+Open browser and type "http://localhost:9090/h2/".
+Sign in username = hema and password = hema
+Database username = hema and password = blank -- this is set b default so just press "Connect"
+
+4. To access prime number program
+(Note: Different strategies available
+* Type "Traditional" below for Traditional Approach of Prime Number calculation
+* Type "BruteForce" for Brute Force Method
+* Type "SieveOfEratosthenes" for Sieve Of Eratosthenes Method)
+Open browser and type "http://localhost:9090/hello-bean/Path-variable/<lowerlimit>,<upperlimit>,<strategy>"
+e.g., http://localhost:9090/hello-bean/Path-variable/10,250,SieveOfEratosthenes
+
+5. Run the prime number generator code as many times as possible and check the results in the database
+SELECT * from PRIME;
